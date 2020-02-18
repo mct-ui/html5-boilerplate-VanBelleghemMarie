@@ -11,6 +11,7 @@ html {
   color: #111;
   padding: 24px 24px 0;
   background: white;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -123,25 +124,37 @@ figcaption {
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background: LigtGrey;
-    margin: 0 0 24px;
+  border: 0;
+  height: 1px;
+  background: LigtGrey;
+  margin: 0 0 24px;
 }
 
 a {
-    color: RoyalBlue;
-    transition: all .1s ease-in-out;
+  color: RoyalBlue;
+  transition: all 0.1s ease-in-out;
 }
 
 a:hover,
 a:focus {
-    color: Crimson ;
+  color: Crimson;
 }
 
 a:visited,
 a:active {
-    color: Blueviolet;
+  color: Blueviolet;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+th {
+  text-align: left;
+}
+th,
+td {
+  padding: 4px 8px;
+  border-bottom: 1px solid gainsboro;
 }
 
 /*
@@ -152,33 +165,29 @@ a:active {
     Modify as content requires.
 */
 
-
 /* Extra small devices (portrait phones, less than 576px)
    No media query since this is the default in Bootstrap
 */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    h1 {
-        font-size: 58px;
-        line-height: 64px;
-    }
+  h1 {
+    font-size: 58px;
+    line-height: 64px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    html {
-        padding: 48px 48px 24px;
-    }
-
+  html {
+    padding: 48px 48px 24px;
+  }
 }
 
 /* Large devices (landscape tablets, desktops, 992px and up) */
 @media (min-width: 992px) {
-
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
 }
